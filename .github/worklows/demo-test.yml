@@ -3,13 +3,13 @@ name: Test actions formationDevops
 on:
   push:
     branches: [ main ]
-  pull_requests:
+  pull_request:
     branches: [ main ]
 
 jobs:
   deployment:
     name: Test actions formationDevops
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/setup-node@v3
